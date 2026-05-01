@@ -49,7 +49,7 @@ export default function Home() {
               📞 Call & Book — 7355517605
             </a>
             <a href="/plan-journey"
-              className="border border-yellow-400 border-opacity-50 hover:border-yellow-400 text-yellow-400 font-bold text-base px-8 py-4 rounded-full transition-all duration-200 hover:bg-yellow-400 hover:bg-opacity-10">
+              className="border border-yellow-400 border-opacity-50 hover:border-yellow-400 text-yellow-400 font-bold text-base px-8 py-4 rounded-full transition-all duration-200 hover:bg-yellow-400 hover:bg-opacity-10 hover:text-white">
               Plan Your Journey →
             </a>
           </div>
@@ -111,7 +111,7 @@ export default function Home() {
               <div key={r.city}
                 className={`relative rounded-3xl overflow-hidden border ${i === 1 ? "border-yellow-400" : "border-gray-800"} bg-gray-950 p-8 flex flex-col hover:border-yellow-400 transition-all duration-300 group`}>
                 {i === 1 && (
-                  <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-yellow-400 text-black text-xs font-black px-4 py-1 rounded-full uppercase tracking-widest">
+                  <div className="absolute top-5 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-yellow-400 text-black text-xs font-black px-4 py-1 rounded-full uppercase tracking-widest">
                     Popular
                   </div>
                 )}
@@ -123,10 +123,6 @@ export default function Home() {
                   <p className="text-yellow-400 font-black text-3xl">{r.price}</p>
                   <p className="text-gray-600 text-xs mt-1">+ Overnight & Parking charges</p>
                 </div>
-                <a href="tel:7355517605"
-                  className="mt-6 block text-center bg-yellow-400 bg-opacity-10 hover:bg-yellow-400 hover:text-black border border-yellow-400 border-opacity-30 hover:border-yellow-400 text-yellow-400 font-bold py-3 rounded-xl transition-all duration-200">
-                  Book This Route
-                </a>
               </div>
             ))}
           </div>
