@@ -1,27 +1,22 @@
 import { Routes, Route, Link } from "react-router-dom";
-
-const Home = () => {
-  return <h1 className="text-2xl font-bold">Home Page</h1>;
-};
-
-const About = () => {
-  return <h1 className="text-2xl font-bold">About Page</h1>;
-};
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import Pricing from "./pages/Pricing";
+import Contact from "./pages/Contact";
+import PlanJourney from "./pages/PlanJourney";
 
 const App = () => {
   return (
-    <div className="p-4">
-      {/* Navbar */}
-      <nav className="flex gap-4 mb-4">
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-      </nav>
-
-      {/* Routes */}
+    <div>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
+        <Route path="/pricing" element={<Pricing />} />
+        <Route path="/plan-journey" element={<PlanJourney />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </div>
   );
 };
