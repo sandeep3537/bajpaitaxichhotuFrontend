@@ -48,7 +48,7 @@ export default function Home() {
               className="bg-yellow-400 hover:bg-yellow-300 text-black font-black text-base px-8 py-4 rounded-full transition-all duration-200 hover:shadow-2xl hover:shadow-yellow-400/30 hover:-translate-y-0.5">
               📞 Call & Book — 7355517605
             </a>
-            <a href="#plan"
+            <a href="/plan-journey"
               className="border border-yellow-400 border-opacity-50 hover:border-yellow-400 text-yellow-400 font-bold text-base px-8 py-4 rounded-full transition-all duration-200 hover:bg-yellow-400 hover:bg-opacity-10">
               Plan Your Journey →
             </a>
